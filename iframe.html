@@ -1,0 +1,37 @@
+//position absolute
+//z-point large
+
+<!doctype html>
+<html>
+<head>
+	<style>
+
+	</style>
+
+		<script type="text/javascript">
+	
+		var iframe = document.createElement('iframe');
+		document.body.appendChild(iframe);
+
+		addStyle = function(){
+			var Style = document.createElement('style');
+			Style.innerHTML = "iframe { position:absolute; top:10%; left:10%; z-index: 1000}";
+		};
+
+
+		iframe.src = 'https://bandcamp.com/' +
+  		'document.open();document.domain=\'' + document.domain +'\ ;document.close();})();';
+
+  		addStyle();
+
+
+
+
+		</script>
+
+	<body>
+
+	</body>
+
+</head>
+</html>
